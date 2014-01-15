@@ -2,13 +2,13 @@ title:            Site Title
 description:      Describe your website here.
 disqus_shortname: 
 #Your site's domain goes here. Leave localhost server or blank when working locally.
-url:              http://localhost:4000
+url:              http://mohebifar.github.io
 
 # Owner/author information
 owner:
-  name:           Your Name
+  name:           Mohamad Mohebifar
   avatar:         avatar.jpg
-  bio:            "Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice."
+  bio:            "I'm Mohamad Mohebifar. I am a software developer and chemistry student in Shahid Beheshti University."
   email:          you@email.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:        
