@@ -9,11 +9,11 @@ owner:
   name:           Mohamad Mohebifar
   avatar:         avatar.jpg
   bio:            "I'm Mohamad Mohebifar. I am a software developer and chemistry student in Shahid Beheshti University."
-  email:          you@email.com
+  email:          netfars@gmail.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:        
-  facebook:       
-  github:         
+  facebook: rafibehom
+  github: mohebifar
   stackexchange:  
   linkedin:       
   instagram:      
@@ -41,7 +41,7 @@ links:
     external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    Asia/Tehran
 future:      true
 pygments:    true
 markdown:    kramdown
