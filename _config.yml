@@ -34,8 +34,9 @@ bing_verify:
 # Links to include in top navigation
 # For external links add external: true
 links:
-  - title: My Old Website (فارسی)
+  - title: My old website (فارسی)
     url: http://old.mohebifar.ir
+    external: true
 #  - title: External Link
 #    url: http://mademistakes.com
 #    external: true
