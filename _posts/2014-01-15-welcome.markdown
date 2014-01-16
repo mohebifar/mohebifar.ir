@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Welcome to my blog!"
+date:   2014-01-15 22:12:13
+categories: News
+---
+
+Welcome to my blog ! This blog is about Web Technologies, Software Developing and Scientific softwares.
+
+Check out my [Repositories on github][gh-mohebifar] for more info on what we're going to discuss.
+
+I hope you'll join and make *us* !
+
+[gh-mohebifar]: https://github.com/mohebifar
