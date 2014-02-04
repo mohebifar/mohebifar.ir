@@ -2,6 +2,7 @@
 layout: post
 title:  "Symfony2 Calendar Bundle"
 date:   2014-02-04 22:12:13
+tags: [Symfony2 bundle, Calendar, Persian calendar, هجری شمسی, هجری خورشیدی, تقویم جلالی, Hejri, Hejri shamsi]
 categories: News
 ---
 Today I publish one of my symfony2 bundles.
