@@ -9,6 +9,6 @@ Welcome to my blog ! This blog is about Web Technologies, Software Developing an
 
 Check out my [Repositories on github][gh-mohebifar] for more info on what we're going to discuss.
 
-I hope you'll join and make *us* !
+I hope you'll join me !
 
 [gh-mohebifar]: https://github.com/mohebifar?tab=repositories
