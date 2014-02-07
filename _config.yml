@@ -14,13 +14,13 @@ owner:
   twitter:        
   facebook: rafibehom
   github: mohebifar
-  stackexchange:  
+  stackexchange: http://stackoverflow.com/users/1543737/mohebifar
   linkedin:       
   instagram:      
   flickr:         
   tumblr:         
   # For Google Authorship https://plus.google.com/authorship
-  google_plus:   
+  google_plus: https://plus.google.com/101347075218033517697/posts
 
 # Background image to be tiled on all pages
 background: ps_neutral.png
