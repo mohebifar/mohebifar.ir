@@ -2,13 +2,13 @@ title:            Mohamad Mohebifar
 description:      Mohamad Mohebifar Personal Webstie
 disqus_shortname: 
 #Your site's domain goes here. Leave localhost server or blank when working locally.
-url:              http://mohebifar.ir
+url:              http://www.mohebifar.ir
 
 # Owner/author information
 owner:
   name:           Mohamad Mohebifar
   avatar:         avatar.jpg
-  bio:            "I'm Mohamad Mohebifar. I am a software developer and chemistry student in Shahid Beheshti University."
+  bio:            "I am a software developer and chemistry student in Shahid Beheshti University."
   email:          netfars@gmail.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:        
@@ -23,7 +23,7 @@ owner:
   google_plus: https://plus.google.com/101347075218033517697/posts
 
 # Background image to be tiled on all pages
-background: ps_neutral.png
+background: witewall_3.png
 
 # Analytics and webmaster tools stuff goes here
 google_analytics:   
