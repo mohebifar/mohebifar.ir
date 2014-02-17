@@ -6,7 +6,7 @@ categories: News
 ---
 
 Razi is a new scientific library for java.
-By now this library is ready parse SMILES and make a object-oriented model of a molecule.
+By now this library is ready to parse SMILES and make an object-oriented model of a molecule.
 
 1. [Download][1] The library, and import it into your project.
 2. Make an instance of `com.razi.formats.smiles.Reader`.
