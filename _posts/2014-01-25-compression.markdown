@@ -6,6 +6,7 @@ categories: News
 ---
 
 According to [RFC2616](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.3) a Http Request may contain an `accept-encoding` header field :
+
 > The Accept-Encoding request-header field is similar to Accept, but restricts the content-codings (section 3.5) that are acceptable in the response.
 
 For example : 
