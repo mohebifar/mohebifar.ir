@@ -21,10 +21,13 @@ If the webserver handles this capability it will be useful to compress some file
 Compressing contents has some advantages and disavantages, so we discuss about that to answer this question : **When should we gzip our responses and when not ?**
 
 **Advantages**
+
 1. Compressing contents helps with decreasing the time it will take for client to download.
+
 2. It saves your bandwidth so it reduces costs ! (Don't wonder if in your country it doesn't matter ! In many countries such as mine, monthly bandwidths are too expensive and this is important to save it !)
 
 **Disadvantages**
+
 1. Compressing contents eats your server's CPU cycles !
 
 The conclusion is there is no disadvantage for your user !
