@@ -30,7 +30,7 @@ Compressing contents has some advantages and disavantages, so we discuss about t
 
 1. Compressing contents eats your server's CPU cycles !
 
-The conclusion is there is no disadvantage for your user !
+The conclusion is that there is no disadvantage for your user !
 
 How to enable it in Apache
 --------------------------
