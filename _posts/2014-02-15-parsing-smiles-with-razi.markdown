@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Parsing SMILES using Razi"
-date:   2014-01-15 20:28:13
+date:   2014-02-15 20:28:13
 categories: News
 ---
 
