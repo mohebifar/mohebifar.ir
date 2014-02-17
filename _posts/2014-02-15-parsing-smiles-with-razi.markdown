@@ -22,7 +22,7 @@ The code of above is :
     
     Molecule mol = sr.get();
 
-Now use descriptors to test it. By now `com.razi.descriptor.molecular.CountDescriptor` is available to count some basic informations of a molecule.
+Now use descriptors to test it. By now `com.razi.descriptor.molecular.CountDescriptor` is available to get some basic countable informations of a molecule.
 
     cd.countAtoms(); // Number of all atoms
     cd.countBonds(); // Number of all bonds
