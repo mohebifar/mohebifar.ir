@@ -2,7 +2,8 @@
 layout: post
 title:  "gzip contents in web, Advantages and Disadvantages"
 date:   2014-01-25 18:01:13
-categories: News
+tags: [GZIP, HTTP Response GZIP, Accept-encoding, cache gzip]
+categories: HTTP
 ---
 
 According to [RFC2616](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.3) a Http Request may contain an `accept-encoding` header field :
