@@ -2,6 +2,7 @@
 layout: post
 title:  "Parsing SMILES using Razi"
 date:   2014-02-15 20:28:13
+tags: [Razi, SMILES, SMILES Parser, Chemistry Library, Chemistry Java Library]
 categories: News
 ---
 
