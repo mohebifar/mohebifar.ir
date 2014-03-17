@@ -26,7 +26,7 @@ owner:
 background: witewall_3.png
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:   
+google_analytics: UA-42543494-2
 google_verify:      
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:         
