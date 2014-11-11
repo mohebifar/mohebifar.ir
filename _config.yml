@@ -1,72 +1,35 @@
-title:            Mohamad Mohebifar
-description:      Mohamad Mohebifar Personal Webstie
-tags: [Mohammad Mohebifar, محمد محبی فر, Mohamad Mohebifar, Web Technologies]
-disqus_shortname: 
-#Your site's domain goes here. Leave localhost server or blank when working locally.
-url:              http://www.mohebifar.ir
+# Site settings
+title: Mohamad Mohebifar
+email: netfars@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+dir:
+  fa: rtl
+  en: ltr
+  de: ltr
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://www.mohebifar.ir" # the base hostname & protocol for your site
+twitter_username: mohebifar
+github_username:  mohebifar
+facebook_username:  rafibehom
+stackoverflow_username:  1543737/mohebifar
 
-# Owner/author information
-owner:
-  name:           Mohamad Mohebifar
-  avatar:         avatar.jpg
-  bio:            "I am a software developer and chemistry student in Shahid Beheshti University."
-  email:          info@mohebifar.ir
-  # Social networking links used in footer. Update and remove as you like.
-  twitter: mohebifar        
-  facebook: rafibehom
-  github: mohebifar
-  stackexchange: http://stackoverflow.com/users/1543737/mohebifar
-  linkedin:       
-  instagram:      
-  flickr:         
-  tumblr:         
-  # For Google Authorship https://plus.google.com/authorship
-  google_plus: https://plus.google.com/101347075218033517697/posts
+languages: ["en", "fa", "de"]
 
-# Background image to be tiled on all pages
-background: witewall_3.png
+# Build settings
+markdown: kramdown
+permalink: /:title
 
-# Analytics and webmaster tools stuff goes here
-google_analytics: UA-42543494-2
-google_verify:      
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
-
-# Links to include in top navigation
-# For external links add external: true
-links:
-  - title: وب‌سایت فارسی
-    url: http://persian.mohebifar.ir
-    external: true
-#  - title: External Link
-#    url: http://mademistakes.com
-#    external: true
-
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    Asia/Tehran
-future:      true
-pygments:    true
-markdown:    kramdown
-
-# https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title
-
-# Amount of post to show on home page
 paginate: 5
 
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  use_coderay: true
-
-  coderay:
-    coderay_line_numbers: nil
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
-
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+icons:
+  chemistry: lab
+  java: code
+  php: code
+  javascript: code
+  nodejs: code
+  html5: html5
+  css3: css3
+  music: music
