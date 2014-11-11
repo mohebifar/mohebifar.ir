@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mohamad Mohebifar</title>
+    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</description>
+    <link>http://www.mohebifar.ir/de/</link>
+    <atom:link href="http://www.mohebifar.ir/de/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Tue, 11 Nov 2014 23:40:39 +0330</pubDate>
+    <lastBuildDate>Tue, 11 Nov 2014 23:40:39 +0330</lastBuildDate>
+    <generator>Jekyll v2.4.0</generator>
+    
+  </channel>
+</rss>
