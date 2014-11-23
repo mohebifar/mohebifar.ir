@@ -7,7 +7,7 @@ layout: default
 
         {% assign posts = paginator.posts %}
         {% for post in posts %}
-
+        {% assign icon = post.categories[2] %}
         <div>
             <div class="date">
                 <span>{% if site.lang == "fa" %}{{ post.date | jdate: "%e %b" }}{% else %}{{ post.date | date: "%e %b" }}{% endif %}</span>
@@ -15,7 +15,7 @@ layout: default
         </div>
         <div>
             <div class="meta-data">
-                <i class="icon icon-{% if site.icons[post.categories[2]] %}{{ site.icons[post.categories[2]] }}{% else %}books{% endif %}"></i>
+                <i class="icon icon-{% if site.icons[icon] %}{{ site.icons[icon] }}{% else %}books{% endif %}"></i>
                 <span class="time">{{ post.date | date : "%H:%M" }}</span>
             </div>
 
