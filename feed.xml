@@ -6,8 +6,8 @@
 </description>
     <link>http://www.mohebifar.ir/</link>
     <atom:link href="http://www.mohebifar.ir/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 11 Nov 2014 23:40:38 +0330</pubDate>
-    <lastBuildDate>Tue, 11 Nov 2014 23:40:38 +0330</lastBuildDate>
+    <pubDate>Sat, 22 Nov 2014 23:26:16 +0330</pubDate>
+    <lastBuildDate>Sat, 22 Nov 2014 23:26:16 +0330</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -36,7 +36,7 @@ By now this library is ready to parse SMILES and make an object-oriented model o
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;cd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;countAtoms&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Number of all atoms&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;cd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;countBonds&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Number of all bonds&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;cd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;countBondsByOrder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Number of bonds with order 2&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;cd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;cd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;countAtomsByElement&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Number of all atoms which are the same with given element&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;n&quot;&gt;cd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;countAtomsByElement&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Number of all atoms which are the same with given element&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;If you are interested in &lt;strong&gt;cheminformatic&lt;/strong&gt; and you like to be contributor you should see &lt;a href=&quot;https://github.com/mohebifar/Razi&quot;&gt;Razi on Github&lt;/a&gt;.&lt;/p&gt;
 
@@ -60,7 +60,7 @@ By now this library is ready to parse SMILES and make an object-oriented model o
         
         <category>en</category>
         
-        <category>news</category>
+        <category>chemistry</category>
         
       </item>
     
@@ -104,9 +104,11 @@ CalendarBundle is a Symfony2 bundle which helps you to show Datetimes based on a
         
         <category>en</category>
         
+        <category>php</category>
+        
         <category>symfony2</category>
         
-        <category>bundles</category>
+        <category>bundle</category>
         
       </item>
     

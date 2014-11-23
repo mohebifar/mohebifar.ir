@@ -90,6 +90,132 @@
 
         
         
+        
+        <div>
+            <div class="date">
+                <span>26 بهمن</span>
+            </div>
+        </div>
+        <div>
+            <div class="meta-data">
+                <i class="icon icon-lab"></i>
+                <span class="time">23:58</span>
+            </div>
+
+            <article class="post">
+                <h2 class="post-title">
+                    <a href="/fa/parsing-smiles-with-razi">پردازش SMILES با رازی</a>
+                </h2>
+
+                <div class="post-content">
+
+                    <p>رازی یک کتابخانه برای جاوا است که برای توسعه نرم‌افزارهای شیمی کاربرد دارد.
+در حال حاضر رازی می‌تواند فایل‌های SMILES را پردازش کند و یک مدل شی‌گرا از مولکول را برگرداند.</p>
+
+<ol>
+  <li>کتابخانه را <a href="https://github.com/mohebifar/Razi/tree/master/dist" title="Download">دانلود</a> کنیدو آن را در پروژه وارد کنید.</li>
+  <li>یک وهله از <code>com.razi.formats.smiles.Reader</code> بسازید.</li>
+  <li>متد <code>set</code> را فرا بخوانید مقدار ورودی را به آن تزریق کنید.</li>
+  <li>متد <code>process</code> را صدا بزنید.</li>
+  <li>تمام شد !</li>
+</ol>
+
+<p>کد آن به این شکل خواهد بود :</p>
+
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="n">Reader</span> <span class="n">sr</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">Reader</span><span class="o">();</span>
+<span class="n">sr</span><span class="o">.</span><span class="na">set</span><span class="o">(</span><span class="s">&quot;C(=O)O&quot;</span><span class="o">);</span>
+<span class="n">sr</span><span class="o">.</span><span class="na">process</span><span class="o">();</span>
+
+<span class="n">Molecule</span> <span class="n">mol</span> <span class="o">=</span> <span class="n">sr</span><span class="o">.</span><span class="na">get</span><span class="o">();</span></code></pre></div>
+
+<p>حالا می‌توانید از توصیف‌کننده‌ها استفاده کنید. در حال حاضر رازی یک توصیف‌کننده‌ی شمارشی برای مولکول دارد. از کلاس <code>com.razi.descriptor.molecular.CountDescriptor</code> برای این کار استفاده کنید.</p>
+
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="n">cd</span><span class="o">.</span><span class="na">countAtoms</span><span class="o">();</span> <span class="c1">// Number of all atoms</span>
+<span class="n">cd</span><span class="o">.</span><span class="na">countBonds</span><span class="o">();</span> <span class="c1">// Number of all bonds</span>
+<span class="n">cd</span><span class="o">.</span><span class="na">countBondsByOrder</span><span class="o">(</span><span class="mi">2</span><span class="o">);</span> <span class="c1">// Number of bonds with order 2</span>
+<span class="n">cd</span><span class="o">.</span><span class="na">countAtomsByElement</span><span class="o">(</span><span class="n">element</span><span class="o">);</span> <span class="c1">// Number of all atoms which are the same with given element</span></code></pre></div>
+
+<p>اگر به شیمی‌فناوری‌اطلاعات علاقه‌مند هستید، رازی را در <a href="https://github.com/mohebifar/Razi">گیت‌هاب</a> دنبال کنید.</p>
+
+
+
+                </div>
+
+            </article>
+        </div>
+        
+        
+        <div>
+            <div class="date">
+                <span>5 بهمن</span>
+            </div>
+        </div>
+        <div>
+            <div class="meta-data">
+                <i class="icon icon-books"></i>
+                <span class="time">21:31</span>
+            </div>
+
+            <article class="post">
+                <h2 class="post-title">
+                    <a href="/fa/compression">محتوای gzip در وب، مزایا و اشکال‌ها</a>
+                </h2>
+
+                <div class="post-content">
+
+                    <p>با توجه به <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.3">RFC2616</a> یک درخواست http می‌تواند شامل فیلد هدر <code>accept-encoding</code> باشد.</p>
+
+<p>برای مثال: </p>
+
+<pre><code>Accept-Encoding: compress, gzip
+</code></pre>
+
+<p>چرا یک مرورگر چنین اطلاعاتی به وب‌سرور ارسال می‌کند ؟  خیلی ساده ! مرورگر به وب‌سرور اطلاع می‌دهد که قادر به decode کردن gzip هست. (بحث ما در این مطلب صرفاٌ در مورد gzip است.)</p>
+
+<p>در این صورت می‌توان فایل‌های asset از قبیل JS و CSS و یا حتی HTML پاسخ را فشرده کرد. </p>
+
+<p>فشرده‌سازی محتوا مزیت‌ها و اشکال‌هایی هست. می‌خواهیم این سوال را بررسی کنیم که <strong>چه زمانی باید محتوا را gzip کنیم؟</strong></p>
+
+<p><strong>مزایا</strong></p>
+
+<ol>
+  <li>
+    <p>فشرده‌سازی زمان دریافت فایل توسط کاربران را کاهش می‌دهد.</p>
+  </li>
+  <li>
+    <p>مصرف پهنای باند و ترافیک شبکه را کاهش می‌دهد.</p>
+  </li>
+</ol>
+
+<p><strong>اشکال‌ها</strong></p>
+
+<ol>
+  <li>عملیات فشرده‌سازی، بار پردازشی را افزایش می‌دهد.</li>
+</ol>
+
+<p>در کل این کار هیچ ضرری برای کاربران ندارد !</p>
+
+<h2 id="section">نحوه فعال‌سازی در وب‌سرور آپاچی</h2>
+<p>ابتدا مطمئن شوید که ماژول <code>mod_deflate</code> فعال است.</p>
+
+<pre><code>LoadModule deflate_module modules/mod_deflate.so
+</code></pre>
+
+<p>سپس این قطه تنظیمات زیر را در فایل <code>httpd.conf</code> اضافه کنید.</p>
+
+<pre><code>&lt;IfModule mod_deflate.c&gt;
+  AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript application/json
+&lt;/IfModule&gt;
+</code></pre>
+
+<p>اما این ماژول gzip محتواهای فایل‌های ایستا را cache نمی‌کند و به ازای هر درخواست عملیات فشرده‌سازی مجددا انجام می‌شود.</p>
+
+
+                </div>
+
+            </article>
+        </div>
+        
 
         <div>
             <ul class="pager">

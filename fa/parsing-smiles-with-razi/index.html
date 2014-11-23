@@ -6,18 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <title>Parsing SMILES using Razi</title>
+    <title>پردازش SMILES با رازی</title>
     <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 ">
     
-    <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
-    
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="stylesheet" href="/assets/styles/main.css">
+    <link rel="stylesheet" href="/fa/assets/styles/main.css">
     
-    <script src="/assets/scripts/vendor/modernizr.js"></script>
+    <link rel="stylesheet" href="/fa/assets/styles/main.rtl.css">
+    
+    <script src="/fa/assets/scripts/vendor/modernizr.js"></script>
 
-    <link rel="canonical" href="http://www.mohebifar.ir/parsing-smiles-with-razi">
+    <link rel="canonical" href="http://www.mohebifar.ir/fa/parsing-smiles-with-razi">
 </head>
 
   <body>
@@ -33,7 +33,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/">Mohamad Mohebifar</a>
+                <a class="navbar-brand" href="/fa">محمد محبی‌فر</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -43,7 +43,7 @@
                     
                     
                     <li>
-                        <a class="page-link" href="/about/">About me</a>
+                        <a class="page-link" href="/fa/about/">درباره من</a>
                     </li>
                     
                     
@@ -51,7 +51,7 @@
                     
                 </ul>
 
-                <ul class="nav navbar-social navbar-nav navbar-right">
+                <ul class="nav navbar-social navbar-nav navbar-left">
                     <li>
                         <a href="https://github.com/mohebifar">
                             <i class="icon icon-github"></i>
@@ -72,9 +72,9 @@
                             <i class="icon icon-stackoverflow"></i>
                         </a>
                     </li>
-                    
+                    <li class="lang"><a href="/">EN</a></li>
                     <li class="lang"><a href="/de/">DE</a></li>
-                    <li class="lang"><a href="/fa/">فا</a></li>
+                    
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -89,7 +89,7 @@
     <div class="row">
         <div class="col-lg-12">
             <h2 class="post-title single-post">
-                <a href="">Parsing SMILES using Razi</a>
+                <a href="/fa">پردازش SMILES با رازی</a>
             </h2>
         </div>
     </div>
@@ -101,23 +101,23 @@
 
         <article class="post single-post">
             <div class="meta-data">
-                Published on
-                <time datetime="2014-02-15 23:58:13 +0330">February 15, 2014</time>
+                منتشر شده در
+                <time datetime="2014-02-15 23:58:13 +0330">26 بهمن 1392</time>
                 
             </div>
             <div class="post-content">
-                <p>Razi is a new scientific library for java.
-By now this library is ready to parse SMILES and make an object-oriented model of a molecule.</p>
+                <p>رازی یک کتابخانه برای جاوا است که برای توسعه نرم‌افزارهای شیمی کاربرد دارد.
+در حال حاضر رازی می‌تواند فایل‌های SMILES را پردازش کند و یک مدل شی‌گرا از مولکول را برگرداند.</p>
 
 <ol>
-  <li><a href="https://github.com/mohebifar/Razi/tree/master/dist" title="Download">Download</a> The library, and import it into your project.</li>
-  <li>Make an instance of <code>com.razi.formats.smiles.Reader</code>.</li>
-  <li>Call the <code>set</code> method and set the input string.</li>
-  <li>Call the <code>process</code> method.</li>
-  <li>Done !</li>
+  <li>کتابخانه را <a href="https://github.com/mohebifar/Razi/tree/master/dist" title="Download">دانلود</a> کنیدو آن را در پروژه وارد کنید.</li>
+  <li>یک وهله از <code>com.razi.formats.smiles.Reader</code> بسازید.</li>
+  <li>متد <code>set</code> را فرا بخوانید مقدار ورودی را به آن تزریق کنید.</li>
+  <li>متد <code>process</code> را صدا بزنید.</li>
+  <li>تمام شد !</li>
 </ol>
 
-<p>The code of above is :</p>
+<p>کد آن به این شکل خواهد بود :</p>
 
 <div class="highlight"><pre><code class="language-java" data-lang="java"><span class="n">Reader</span> <span class="n">sr</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">Reader</span><span class="o">();</span>
 <span class="n">sr</span><span class="o">.</span><span class="na">set</span><span class="o">(</span><span class="s">&quot;C(=O)O&quot;</span><span class="o">);</span>
@@ -125,14 +125,14 @@ By now this library is ready to parse SMILES and make an object-oriented model o
 
 <span class="n">Molecule</span> <span class="n">mol</span> <span class="o">=</span> <span class="n">sr</span><span class="o">.</span><span class="na">get</span><span class="o">();</span></code></pre></div>
 
-<p>Now use descriptors to test it. By now <code>com.razi.descriptor.molecular.CountDescriptor</code> is available to get some basic countable informations of a molecule.</p>
+<p>حالا می‌توانید از توصیف‌کننده‌ها استفاده کنید. در حال حاضر رازی یک توصیف‌کننده‌ی شمارشی برای مولکول دارد. از کلاس <code>com.razi.descriptor.molecular.CountDescriptor</code> برای این کار استفاده کنید.</p>
 
 <div class="highlight"><pre><code class="language-java" data-lang="java"><span class="n">cd</span><span class="o">.</span><span class="na">countAtoms</span><span class="o">();</span> <span class="c1">// Number of all atoms</span>
 <span class="n">cd</span><span class="o">.</span><span class="na">countBonds</span><span class="o">();</span> <span class="c1">// Number of all bonds</span>
 <span class="n">cd</span><span class="o">.</span><span class="na">countBondsByOrder</span><span class="o">(</span><span class="mi">2</span><span class="o">);</span> <span class="c1">// Number of bonds with order 2</span>
 <span class="n">cd</span><span class="o">.</span><span class="na">countAtomsByElement</span><span class="o">(</span><span class="n">element</span><span class="o">);</span> <span class="c1">// Number of all atoms which are the same with given element</span></code></pre></div>
 
-<p>If you are interested in <strong>cheminformatic</strong> and you like to be contributor you should see <a href="https://github.com/mohebifar/Razi">Razi on Github</a>.</p>
+<p>اگر به شیمی‌فناوری‌اطلاعات علاقه‌مند هستید، رازی را در <a href="https://github.com/mohebifar/Razi">گیت‌هاب</a> دنبال کنید.</p>
 
 
             </div>
@@ -142,45 +142,25 @@ By now this library is ready to parse SMILES and make an object-oriented model o
         
 
         <section class="panel panel-default more-posts">
-            <div class="panel-heading">Read More</div>
+            <div class="panel-heading">بیشتر بخوانید</div>
             <div class="panel-body">
                 
                 <article class="related-post">
                     <h2 class="post-title">
-                        <a href="/calendar-bundle">
-                            Symfony2 Calendar Bundle
+                        <a href="/fa/compression">
+                            محتوای gzip در وب، مزایا و اشکال‌ها
                         </a>
                     </h2>
 
                     <div class="post-content">
                         
-                        Today I publish one of my symfony2 bundles.CalendarBundle is a Symfony2 bundle which helps you to show Datetimes based on a calendar. Cal...&hellip;
+                        با توجه به RFC2616 یک درخواست http می‌تواند شامل فیلد هدر accept-encoding باشد.برای مثال: Accept-Encoding: compress, gzipچرا یک مرورگر چن...&hellip;
                         
                     </div>
                 </article>
                 
 
                 <div class="linked-posts">
-                    
-                    <article class="pull-right">
-                        <h2 class="post-title">
-                            <a href="/compression">
-                                gzip contents in web, Advantages and Disadvantages
-                            </a>
-                        </h2>
-                        <span>Published on</span>
-                        <time>January 25, 2014</time>
-                    </article>
-                    
-                    <article class="pull-right">
-                        <h2 class="post-title">
-                            <a href="/welcome">
-                                Welcome to my blog!
-                            </a>
-                        </h2>
-                        <span>Published on</span>
-                        <time>January 16, 2014</time>
-                    </article>
                     
                 </div>
 
@@ -195,7 +175,7 @@ By now this library is ready to parse SMILES and make an object-oriented model o
 
     <footer>
     <div class="container text-center">
-        Powered by <a href="http://jekyllrb.com">Jekyll</a>. Designed by Mohamad Mohebifar
+        ساخته شده با <a href="http://jekyllrb.com">جکیل</a>. طراحی شده توسط محمد محبی‌فر
     </div>
 </footer>
 

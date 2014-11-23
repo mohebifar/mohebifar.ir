@@ -6,18 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <title>Symfony2 Calendar Bundle</title>
+    <title>محتوای gzip در وب، مزایا و اشکال‌ها</title>
     <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 ">
     
-    <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
-    
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="stylesheet" href="/assets/styles/main.css">
+    <link rel="stylesheet" href="/fa/assets/styles/main.css">
     
-    <script src="/assets/scripts/vendor/modernizr.js"></script>
+    <link rel="stylesheet" href="/fa/assets/styles/main.rtl.css">
+    
+    <script src="/fa/assets/scripts/vendor/modernizr.js"></script>
 
-    <link rel="canonical" href="http://www.mohebifar.ir/calendar-bundle">
+    <link rel="canonical" href="http://www.mohebifar.ir/fa/compression">
 </head>
 
   <body>
@@ -33,7 +33,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/">Mohamad Mohebifar</a>
+                <a class="navbar-brand" href="/fa">محمد محبی‌فر</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -43,7 +43,7 @@
                     
                     
                     <li>
-                        <a class="page-link" href="/about/">About me</a>
+                        <a class="page-link" href="/fa/about/">درباره من</a>
                     </li>
                     
                     
@@ -51,7 +51,7 @@
                     
                 </ul>
 
-                <ul class="nav navbar-social navbar-nav navbar-right">
+                <ul class="nav navbar-social navbar-nav navbar-left">
                     <li>
                         <a href="https://github.com/mohebifar">
                             <i class="icon icon-github"></i>
@@ -72,9 +72,9 @@
                             <i class="icon icon-stackoverflow"></i>
                         </a>
                     </li>
-                    
+                    <li class="lang"><a href="/">EN</a></li>
                     <li class="lang"><a href="/de/">DE</a></li>
-                    <li class="lang"><a href="/fa/">فا</a></li>
+                    
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -89,7 +89,7 @@
     <div class="row">
         <div class="col-lg-12">
             <h2 class="post-title single-post">
-                <a href="">Symfony2 Calendar Bundle</a>
+                <a href="/fa">محتوای gzip در وب، مزایا و اشکال‌ها</a>
             </h2>
         </div>
     </div>
@@ -101,23 +101,57 @@
 
         <article class="post single-post">
             <div class="meta-data">
-                Published on
-                <time datetime="2014-02-05 01:42:13 +0330">February 05, 2014</time>
+                منتشر شده در
+                <time datetime="2014-01-25 21:31:13 +0330">05 بهمن 1392</time>
                 
             </div>
             <div class="post-content">
-                <p>Today I publish one of my symfony2 bundles.
-CalendarBundle is a Symfony2 bundle which helps you to show Datetimes based on a calendar. CalendarBundle uses a strategy that allows you to make your arbitary driver.</p>
+                <p>با توجه به <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.3">RFC2616</a> یک درخواست http می‌تواند شامل فیلد هدر <code>accept-encoding</code> باشد.</p>
 
-<p>Currently drivers are :</p>
+<p>برای مثال: </p>
+
+<pre><code>Accept-Encoding: compress, gzip
+</code></pre>
+
+<p>چرا یک مرورگر چنین اطلاعاتی به وب‌سرور ارسال می‌کند ؟  خیلی ساده ! مرورگر به وب‌سرور اطلاع می‌دهد که قادر به decode کردن gzip هست. (بحث ما در این مطلب صرفاٌ در مورد gzip است.)</p>
+
+<p>در این صورت می‌توان فایل‌های asset از قبیل JS و CSS و یا حتی HTML پاسخ را فشرده کرد. </p>
+
+<p>فشرده‌سازی محتوا مزیت‌ها و اشکال‌هایی هست. می‌خواهیم این سوال را بررسی کنیم که <strong>چه زمانی باید محتوا را gzip کنیم؟</strong></p>
+
+<p><strong>مزایا</strong></p>
 
 <ol>
-  <li>Gregorian</li>
-  <li>Persian (also known as Hejri Khorshidi, Hijri Shamsi (Persian: هجری شمسی, هجری خورشیدی). It is official calendar in Iran)</li>
+  <li>
+    <p>فشرده‌سازی زمان دریافت فایل توسط کاربران را کاهش می‌دهد.</p>
+  </li>
+  <li>
+    <p>مصرف پهنای باند و ترافیک شبکه را کاهش می‌دهد.</p>
+  </li>
 </ol>
 
-<p><a href="https://github.com/mohebifar/CalendarBundle">Read more and get installation instruction on Github.</a></p>
+<p><strong>اشکال‌ها</strong></p>
 
+<ol>
+  <li>عملیات فشرده‌سازی، بار پردازشی را افزایش می‌دهد.</li>
+</ol>
+
+<p>در کل این کار هیچ ضرری برای کاربران ندارد !</p>
+
+<h2 id="section">نحوه فعال‌سازی در وب‌سرور آپاچی</h2>
+<p>ابتدا مطمئن شوید که ماژول <code>mod_deflate</code> فعال است.</p>
+
+<pre><code>LoadModule deflate_module modules/mod_deflate.so
+</code></pre>
+
+<p>سپس این قطه تنظیمات زیر را در فایل <code>httpd.conf</code> اضافه کنید.</p>
+
+<pre><code>&lt;IfModule mod_deflate.c&gt;
+  AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript application/json
+&lt;/IfModule&gt;
+</code></pre>
+
+<p>اما این ماژول gzip محتواهای فایل‌های ایستا را cache نمی‌کند و به ازای هر درخواست عملیات فشرده‌سازی مجددا انجام می‌شود.</p>
 
             </div>
 
@@ -126,45 +160,25 @@ CalendarBundle is a Symfony2 bundle which helps you to show Datetimes based on a
         
 
         <section class="panel panel-default more-posts">
-            <div class="panel-heading">Read More</div>
+            <div class="panel-heading">بیشتر بخوانید</div>
             <div class="panel-body">
                 
                 <article class="related-post">
                     <h2 class="post-title">
-                        <a href="/parsing-smiles-with-razi">
-                            Parsing SMILES using Razi
+                        <a href="/fa/parsing-smiles-with-razi">
+                            پردازش SMILES با رازی
                         </a>
                     </h2>
 
                     <div class="post-content">
                         
-                        Razi is a new scientific library for java.By now this library is ready to parse SMILES and make an object-oriented model of a molecule.1....&hellip;
+                        رازی یک کتابخانه برای جاوا است که برای توسعه نرم‌افزارهای شیمی کاربرد دارد.در حال حاضر رازی می‌تواند فایل‌های SMILES را پردازش کند و یک م...&hellip;
                         
                     </div>
                 </article>
                 
 
                 <div class="linked-posts">
-                    
-                    <article class="pull-right">
-                        <h2 class="post-title">
-                            <a href="/compression">
-                                gzip contents in web, Advantages and Disadvantages
-                            </a>
-                        </h2>
-                        <span>Published on</span>
-                        <time>January 25, 2014</time>
-                    </article>
-                    
-                    <article class="pull-right">
-                        <h2 class="post-title">
-                            <a href="/welcome">
-                                Welcome to my blog!
-                            </a>
-                        </h2>
-                        <span>Published on</span>
-                        <time>January 16, 2014</time>
-                    </article>
                     
                 </div>
 
@@ -179,7 +193,7 @@ CalendarBundle is a Symfony2 bundle which helps you to show Datetimes based on a
 
     <footer>
     <div class="container text-center">
-        Powered by <a href="http://jekyllrb.com">Jekyll</a>. Designed by Mohamad Mohebifar
+        ساخته شده با <a href="http://jekyllrb.com">جکیل</a>. طراحی شده توسط محمد محبی‌فر
     </div>
 </footer>
 
