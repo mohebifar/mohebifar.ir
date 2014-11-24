@@ -6,9 +6,58 @@
 </description>
     <link>http://www.mohebifar.ir/de/</link>
     <atom:link href="http://www.mohebifar.ir/de/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 22 Nov 2014 23:26:17 +0330</pubDate>
-    <lastBuildDate>Sat, 22 Nov 2014 23:26:17 +0330</lastBuildDate>
+    <pubDate>Sun, 23 Nov 2014 23:43:28 +0330</pubDate>
+    <lastBuildDate>Sun, 23 Nov 2014 23:43:28 +0330</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Analysieren SMILES mit Razi</title>
+        <description>&lt;p&gt;Razi ist eine neue wissenschaftliche Bibliothek für Java.
+Mittlerweile diese Bibliothek kannt SMILES analysieren und eine objektorientiertes Modell eines Moleküls machen.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;Reader&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Reader&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;sr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;C(=O)O&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;sr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;process&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;Molecule&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mol&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;cd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;countAtoms&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Number of all atoms&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;cd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;countBonds&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Number of all bonds&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;cd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;countBondsByOrder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Number of bonds with order 2&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;cd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;countAtomsByElement&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Number of all atoms which are the same with given element&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+</description>
+        <pubDate>Mon, 24 Nov 2014 03:05:13 +0330</pubDate>
+        <link>http://www.mohebifar.ir/de/analysieren-smiles-razi</link>
+        <guid isPermaLink="true">http://www.mohebifar.ir/de/analysieren-smiles-razi</guid>
+        
+        
+        <category>_i18n</category>
+        
+        <category>de</category>
+        
+        <category>java</category>
+        
+      </item>
+    
+      <item>
+        <title>Willkommen in meinem blog!</title>
+        <description>&lt;p&gt;Willkommen in meinem blog ! Dieser Blog ist über Web-Technologien, Software-Entwicklung und wissenschaftliche Software.&lt;/p&gt;
+
+&lt;p&gt;Schauen Sie sich mein &lt;a href=&quot;https://github.com/mohebifar?tab=repositories&quot;&gt;Repositories auf github&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 24 Nov 2014 02:56:13 +0330</pubDate>
+        <link>http://www.mohebifar.ir/de/welcome</link>
+        <guid isPermaLink="true">http://www.mohebifar.ir/de/welcome</guid>
+        
+        
+        <category>_i18n</category>
+        
+        <category>de</category>
+        
+        <category>news</category>
+        
+      </item>
     
   </channel>
 </rss>

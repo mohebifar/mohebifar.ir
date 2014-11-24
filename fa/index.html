@@ -93,6 +93,90 @@
         
         <div>
             <div class="date">
+                <span>11 آبان</span>
+            </div>
+        </div>
+        <div>
+            <div class="meta-data">
+                <i class="icon icon-code"></i>
+                <span class="time">16:00</span>
+            </div>
+
+            <article class="post">
+                <h2 class="post-title">
+                    <a href="/fa/angular-persian">ماژول فارسی Angular.js</a>
+                </h2>
+
+                <div class="post-content">
+
+                    <p>انگولار یک فریم‌ورک MV* سمت کلاینت است که به زبان جاوا اسکریپت نوشته شده است. با استفاده از این ماژول می‌توانید یک وب‌اپلیکیشن Single Page بنویسید. برای توضیحات بیشتر به وب‌سایت <a href="https://angularjs.org">angularjs.org</a> مراجعه کنید.</p>
+
+<p>از آن‌جایی که در انگولار داده‌ها به صورت خام و معمولا به وسیله یک سرویس RESTful از سرور دریافت می‌شود، برای نمایش یک خروجی مناسب برای کاربران فارسی‌زبان ابزارهایی لازم هست.</p>
+
+<p>ماژول فارسی انگولار، یک مجموعه فیلتر کاربردی جهت محلی‌سازی نرم‌فزارهای فارسی، از جمله تبدیل اعداد انگلیسی به فارسی، تبدیل اعداد به حروف، تبدیل کاراکترهای عربی به فارسی، تغییر لی‌اوت کیبورد و … در اختیار کاربران قرار می‌دهد.</p>
+
+<p>برای نصب این ماژول ابتدا <code>bower</code> را نصب کنید سپس دستور زیر را اجرا کنید.</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>bower install angular-persian</code></pre></div>
+
+<p>سپس ماژول <code>ngPersian</code> را به app خود اضافه کنید.</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">angular</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s1">&#39;myApp&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;ngPersian&#39;</span><span class="p">,</span> <span class="cm">/* deps ... */</span><span class="p">]);</span></code></pre></div>
+
+<p>حالا می‌توانید از فیلترهای این ماژول در نماهای برنامه خود استفاده کنید.</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;input</span> <span class="na">ng-model=</span><span class="s">&quot;someNumber&quot;</span><span class="nt">&gt;</span> {‌{ someNumber | pNumber }‌}
+<span class="nt">&lt;input</span> <span class="na">ng-model=</span><span class="s">&quot;price&quot;</span><span class="nt">&gt;</span> {‌{ price | pDigitWords }‌} ریال</code></pre></div>
+
+<p>قطعه کد بالا مقدار مدل <code>someNumber</code> را با کاراکترهای فارسی نمایش می‌دهد و مقدار مدل <code>price</code> را با حروف نمایش می‌دهد. (برای مثال: یک صد و بیست هزار ریال)</p>
+
+<p><a href="https://github.com/mohebifar/angular-persian">برای خواندن جزئیات بشتر در مورد این ماژول، صفحه گیت‌هاب آن را دنبال کنید.</a></p>
+
+
+                </div>
+
+            </article>
+        </div>
+        
+        
+        <div>
+            <div class="date">
+                <span>1 آبان</span>
+            </div>
+        </div>
+        <div>
+            <div class="meta-data">
+                <i class="icon icon-code"></i>
+                <span class="time">18:31</span>
+            </div>
+
+            <article class="post">
+                <h2 class="post-title">
+                    <a href="/fa/php-jalali-extension">اکستنشن هجری شمسی برای php</a>
+                </h2>
+
+                <div class="post-content">
+
+                    <p>کتابخانه‌های پیکربندی تاریخ بر اساس تقویم هجری شمسی همواره یکی از پرکاربردترین ابزارها نزد برنامه‌نویسان ایرانی هستند.
+این کتابخانه‌ها در نرم‌افزارهای وب بسیار پراستفاده هستند و مخصوصا بسته‌های زیادی برای  برای این منظور به زبان php ایجاد شده.</p>
+
+<p>اما نکته‌ی اساسی محاسبات زیاد این کدهاست که بار پردازشی زیادی به همراه دارند مخصوصا اگر این کدها به زبان php هم نوشته شده باشند. قرار دادن این عملیات در یک لایه بالاتر از کدهای php به عنوان یک اکستنشن برای ZendEngine می‌تواند سرعت پردازش را افزایش دهد.</p>
+
+<p>اکستنشن <strong>php-jalali-extension</strong> به همین منظور ایجاد شده تا امکان نمایش تاریخ با قالب تقویم هجری شمسی با سرعت زیادی در زبان php انجام شود.</p>
+
+<p>یک مقایسه‌ی ساده با یک کتابخانه پراستفاده php سرعت بالای این اکستنشن را نشان می‌دهد. این اکستنشن می‌تواند ۱۰۰۰۰۰ تاریخ را در مدت ۵ ثانیه انجام دهد در حالی که این کار با یک کلاس php معمول، ۱۸ ثانیه زمان می‌برد.</p>
+
+<p><a href="https://github.com/mohebifar/php-jalali-extension">برای دریافت این اکستنشن، راهنمای آن را در گیت هاب بخوانید.</a></p>
+
+
+                </div>
+
+            </article>
+        </div>
+        
+        
+        <div>
+            <div class="date">
                 <span>26 بهمن</span>
             </div>
         </div>

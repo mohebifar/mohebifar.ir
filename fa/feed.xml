@@ -6,9 +6,85 @@
 </description>
     <link>http://www.mohebifar.ir/fa/</link>
     <atom:link href="http://www.mohebifar.ir/fa/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 22 Nov 2014 23:26:17 +0330</pubDate>
-    <lastBuildDate>Sat, 22 Nov 2014 23:26:17 +0330</lastBuildDate>
+    <pubDate>Sun, 23 Nov 2014 23:43:27 +0330</pubDate>
+    <lastBuildDate>Sun, 23 Nov 2014 23:43:27 +0330</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>ماژول فارسی Angular.js</title>
+        <description>&lt;p&gt;انگولار یک فریم‌ورک MV* سمت کلاینت است که به زبان جاوا اسکریپت نوشته شده است. با استفاده از این ماژول می‌توانید یک وب‌اپلیکیشن Single Page بنویسید. برای توضیحات بیشتر به وب‌سایت &lt;a href=&quot;https://angularjs.org&quot;&gt;angularjs.org&lt;/a&gt; مراجعه کنید.&lt;/p&gt;
+
+&lt;p&gt;از آن‌جایی که در انگولار داده‌ها به صورت خام و معمولا به وسیله یک سرویس RESTful از سرور دریافت می‌شود، برای نمایش یک خروجی مناسب برای کاربران فارسی‌زبان ابزارهایی لازم هست.&lt;/p&gt;
+
+&lt;p&gt;ماژول فارسی انگولار، یک مجموعه فیلتر کاربردی جهت محلی‌سازی نرم‌فزارهای فارسی، از جمله تبدیل اعداد انگلیسی به فارسی، تبدیل اعداد به حروف، تبدیل کاراکترهای عربی به فارسی، تغییر لی‌اوت کیبورد و … در اختیار کاربران قرار می‌دهد.&lt;/p&gt;
+
+&lt;p&gt;برای نصب این ماژول ابتدا &lt;code&gt;bower&lt;/code&gt; را نصب کنید سپس دستور زیر را اجرا کنید.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;bower install angular-persian&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;سپس ماژول &lt;code&gt;ngPersian&lt;/code&gt; را به app خود اضافه کنید.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;app&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;angular&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;module&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;myApp&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;ngPersian&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/* deps ... */&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;حالا می‌توانید از فیلترهای این ماژول در نماهای برنامه خود استفاده کنید.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;ng-model=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;someNumber&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt; {‌{ someNumber | pNumber }‌}
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;ng-model=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;price&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt; {‌{ price | pDigitWords }‌} ریال&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;قطعه کد بالا مقدار مدل &lt;code&gt;someNumber&lt;/code&gt; را با کاراکترهای فارسی نمایش می‌دهد و مقدار مدل &lt;code&gt;price&lt;/code&gt; را با حروف نمایش می‌دهد. (برای مثال: یک صد و بیست هزار ریال)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/mohebifar/angular-persian&quot;&gt;برای خواندن جزئیات بشتر در مورد این ماژول، صفحه گیت‌هاب آن را دنبال کنید.&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 02 Nov 2014 16:00:15 +0330</pubDate>
+        <link>http://www.mohebifar.ir/fa/angular-persian</link>
+        <guid isPermaLink="true">http://www.mohebifar.ir/fa/angular-persian</guid>
+        
+        <category>Angular</category>
+        
+        <category>Persian</category>
+        
+        
+        <category>_i18n</category>
+        
+        <category>fa</category>
+        
+        <category>javascript</category>
+        
+      </item>
+    
+      <item>
+        <title>اکستنشن هجری شمسی برای php</title>
+        <description>&lt;p&gt;کتابخانه‌های پیکربندی تاریخ بر اساس تقویم هجری شمسی همواره یکی از پرکاربردترین ابزارها نزد برنامه‌نویسان ایرانی هستند.
+این کتابخانه‌ها در نرم‌افزارهای وب بسیار پراستفاده هستند و مخصوصا بسته‌های زیادی برای  برای این منظور به زبان php ایجاد شده.&lt;/p&gt;
+
+&lt;p&gt;اما نکته‌ی اساسی محاسبات زیاد این کدهاست که بار پردازشی زیادی به همراه دارند مخصوصا اگر این کدها به زبان php هم نوشته شده باشند. قرار دادن این عملیات در یک لایه بالاتر از کدهای php به عنوان یک اکستنشن برای ZendEngine می‌تواند سرعت پردازش را افزایش دهد.&lt;/p&gt;
+
+&lt;p&gt;اکستنشن &lt;strong&gt;php-jalali-extension&lt;/strong&gt; به همین منظور ایجاد شده تا امکان نمایش تاریخ با قالب تقویم هجری شمسی با سرعت زیادی در زبان php انجام شود.&lt;/p&gt;
+
+&lt;p&gt;یک مقایسه‌ی ساده با یک کتابخانه پراستفاده php سرعت بالای این اکستنشن را نشان می‌دهد. این اکستنشن می‌تواند ۱۰۰۰۰۰ تاریخ را در مدت ۵ ثانیه انجام دهد در حالی که این کار با یک کلاس php معمول، ۱۸ ثانیه زمان می‌برد.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/mohebifar/php-jalali-extension&quot;&gt;برای دریافت این اکستنشن، راهنمای آن را در گیت هاب بخوانید.&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 23 Oct 2014 18:31:13 +0330</pubDate>
+        <link>http://www.mohebifar.ir/fa/php-jalali-extension</link>
+        <guid isPermaLink="true">http://www.mohebifar.ir/fa/php-jalali-extension</guid>
+        
+        <category>PHP</category>
+        
+        <category>jalali</category>
+        
+        <category>extension</category>
+        
+        <category>calendar</category>
+        
+        
+        <category>_i18n</category>
+        
+        <category>fa</category>
+        
+        <category>php</category>
+        
+      </item>
     
       <item>
         <title>پردازش SMILES با رازی</title>

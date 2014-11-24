@@ -90,6 +90,75 @@
 
         
         
+        
+        <div>
+            <div class="date">
+                <span>24 Nov</span>
+            </div>
+        </div>
+        <div>
+            <div class="meta-data">
+                <i class="icon icon-code"></i>
+                <span class="time">03:05</span>
+            </div>
+
+            <article class="post">
+                <h2 class="post-title">
+                    <a href="/de/analysieren-smiles-razi">Analysieren SMILES mit Razi</a>
+                </h2>
+
+                <div class="post-content">
+
+                    <p>Razi ist eine neue wissenschaftliche Bibliothek für Java.
+Mittlerweile diese Bibliothek kannt SMILES analysieren und eine objektorientiertes Modell eines Moleküls machen.</p>
+
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="n">Reader</span> <span class="n">sr</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">Reader</span><span class="o">();</span>
+<span class="n">sr</span><span class="o">.</span><span class="na">set</span><span class="o">(</span><span class="s">&quot;C(=O)O&quot;</span><span class="o">);</span>
+<span class="n">sr</span><span class="o">.</span><span class="na">process</span><span class="o">();</span>
+
+<span class="n">Molecule</span> <span class="n">mol</span> <span class="o">=</span> <span class="n">sr</span><span class="o">.</span><span class="na">get</span><span class="o">();</span></code></pre></div>
+
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="n">cd</span><span class="o">.</span><span class="na">countAtoms</span><span class="o">();</span> <span class="c1">// Number of all atoms</span>
+<span class="n">cd</span><span class="o">.</span><span class="na">countBonds</span><span class="o">();</span> <span class="c1">// Number of all bonds</span>
+<span class="n">cd</span><span class="o">.</span><span class="na">countBondsByOrder</span><span class="o">(</span><span class="mi">2</span><span class="o">);</span> <span class="c1">// Number of bonds with order 2</span>
+<span class="n">cd</span><span class="o">.</span><span class="na">countAtomsByElement</span><span class="o">(</span><span class="n">element</span><span class="o">);</span> <span class="c1">// Number of all atoms which are the same with given element</span></code></pre></div>
+
+
+                </div>
+
+            </article>
+        </div>
+        
+        
+        <div>
+            <div class="date">
+                <span>24 Nov</span>
+            </div>
+        </div>
+        <div>
+            <div class="meta-data">
+                <i class="icon icon-news"></i>
+                <span class="time">02:56</span>
+            </div>
+
+            <article class="post">
+                <h2 class="post-title">
+                    <a href="/de/welcome">Willkommen in meinem blog!</a>
+                </h2>
+
+                <div class="post-content">
+
+                    <p>Willkommen in meinem blog ! Dieser Blog ist über Web-Technologien, Software-Entwicklung und wissenschaftliche Software.</p>
+
+<p>Schauen Sie sich mein <a href="https://github.com/mohebifar?tab=repositories">Repositories auf github</a>.</p>
+
+
+
+                </div>
+
+            </article>
+        </div>
+        
 
         <div>
             <ul class="pager">
