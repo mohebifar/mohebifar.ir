@@ -51,16 +51,18 @@ layout: default
                 {% endfor %}
 
                 <div class="linked-posts">
+                    {% assign pull = 'left' %}
                     {% for post in site.related_posts limit:2 offset:1 %}
-                    <article class="pull-right">
+                    <article class="pull-{{ pull }}" style="width: 50%;">
                         <h2 class="post-title">
                             <a href="{{ post.url | prepend: site.baseurl }}">
                                 {{ post.title }}
                             </a>
                         </h2>
-                        <span>Published on</span>
-                        <time>{{ post.date | date: "%B %d, %Y" }}</time>
+                        <span>{% t published_on %}</span>
+                        <time>{% if site.lang == "fa" %}{{ post.date | jdate: "%d %b %Y" }}{% else %}{{ post.date | date: "%B %d, %Y" }}{% endif %}</time>
                     </article>
+                    {% assign pull = 'right' %}
                     {% endfor %}
                 </div>
 
