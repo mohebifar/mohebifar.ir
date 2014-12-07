@@ -1,0 +1,37 @@
+# Site settings
+title: Mohamad Mohebifar
+email: netfars@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+dir:
+  fa: rtl
+  en: ltr
+  de: ltr
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://www.mohebifar.ir" # the base hostname & protocol for your site
+twitter_username: mohebifar
+github_username:  mohebifar
+facebook_username:  rafibehom
+stackoverflow_username:  1543737/mohebifar
+codepen_username: mohebifar
+
+languages: ["en", "fa", "de"]
+
+# Build settings
+markdown: kramdown
+permalink: /:title
+
+paginate: 5
+
+icons:
+  chemistry: lab
+  java: code
+  php: code
+  javascript: code
+  nodejs: code
+  html5: html5
+  css3: css3
+  music: music
+  news: news

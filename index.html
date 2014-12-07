@@ -1,321 +1,56 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+---
 
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-
-    <title>Mohamad Mohebifar</title>
-    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-">
-    
-    <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
-    
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="stylesheet" href="/assets/styles/main.css">
-    
-    <script src="/assets/scripts/vendor/modernizr.js"></script>
-
-    <link rel="canonical" href="http://www.mohebifar.ir/">
-</head>
-
-  <body>
-
-    <header>
-    <nav class="navbar navbar-static-top navbar-default navbar-default" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/">Mohamad Mohebifar</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-
-                    
-                    
-                    <li>
-                        <a class="page-link" href="/about/">About me</a>
-                    </li>
-                    
-                    
-                    
-                    
-                </ul>
-
-                <ul class="nav navbar-social navbar-nav navbar-right">
-                    <li>
-                        <a href="https://github.com/mohebifar">
-                            <i class="icon icon-github"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/rafibehom">
-                            <i class="icon icon-facebook"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/mohebifar">
-                            <i class="icon icon-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://stackoverflow.com/users/1543737/mohebifar">
-                            <i class="icon icon-stackoverflow"></i>
-                        </a>
-                    </li>
-                    
-                    <li class="lang"><a href="/de/">DE</a></li>
-                    <li class="lang"><a href="/fa/">فا</a></li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-</header>
-
-
-    <div class="container">
+<div class="container">
     <div class="posts">
 
-        
-        
-
+        {% assign posts = paginator.posts %}
+        {% for post in posts %}
+        {% assign icon = post.categories[2] %}
         <div>
             <div class="date">
-                <span>15 Feb</span>
+                <span>{% if site.lang == "fa" %}{{ post.date | jdate: "%e %b" }}{% else %}{{ post.date | date: "%e %b" }}{% endif %}</span>
             </div>
         </div>
         <div>
             <div class="meta-data">
-                <i class="icon icon-books"></i>
-                <span class="time">23:58</span>
+                <i class="icon icon-{% if site.icons[icon] %}{{ site.icons[icon] }}{% else %}books{% endif %}"></i>
+                <span class="time">{{ post.date | date : "%H:%M" }}</span>
             </div>
 
             <article class="post">
                 <h2 class="post-title">
-                    <a href="/parsing-smiles-with-razi">Parsing SMILES using Razi</a>
+                    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                 </h2>
 
                 <div class="post-content">
 
-                    <p>Razi is a new scientific library for java.
-By now this library is ready to parse SMILES and make an object-oriented model of a molecule.</p>
-
-<ol>
-  <li><a href="https://github.com/mohebifar/Razi/tree/master/dist" title="Download">Download</a> The library, and import it into your project.</li>
-  <li>Make an instance of <code>com.razi.formats.smiles.Reader</code>.</li>
-  <li>Call the <code>set</code> method and set the input string.</li>
-  <li>Call the <code>process</code> method.</li>
-  <li>Done !</li>
-</ol>
-
-<p>The code of above is :</p>
-
-<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="n">Reader</span> <span class="n">sr</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">Reader</span><span class="o">();</span>
-<span class="n">sr</span><span class="o">.</span><span class="na">set</span><span class="o">(</span><span class="s">&quot;C(=O)O&quot;</span><span class="o">);</span>
-<span class="n">sr</span><span class="o">.</span><span class="na">process</span><span class="o">();</span>
-
-<span class="n">Molecule</span> <span class="n">mol</span> <span class="o">=</span> <span class="n">sr</span><span class="o">.</span><span class="na">get</span><span class="o">();</span></code></pre></div>
-
-<p>Now use descriptors to test it. By now <code>com.razi.descriptor.molecular.CountDescriptor</code> is available to get some basic countable informations of a molecule.</p>
-
-<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="n">cd</span><span class="o">.</span><span class="na">countAtoms</span><span class="o">();</span> <span class="c1">// Number of all atoms</span>
-<span class="n">cd</span><span class="o">.</span><span class="na">countBonds</span><span class="o">();</span> <span class="c1">// Number of all bonds</span>
-<span class="n">cd</span><span class="o">.</span><span class="na">countBondsByOrder</span><span class="o">(</span><span class="mi">2</span><span class="o">);</span> <span class="c1">// Number of bonds with order 2</span>
-<span class="n">cd</span><span class="o">.</span><span class="na">cd</span><span class="o">.</span><span class="na">countAtomsByElement</span><span class="o">(</span><span class="n">element</span><span class="o">);</span> <span class="c1">// Number of all atoms which are the same with given element</span></code></pre></div>
-
-<p>If you are interested in <strong>cheminformatic</strong> and you like to be contributor you should see <a href="https://github.com/mohebifar/Razi">Razi on Github</a>.</p>
-
-
+                    {{ post.content }}
 
                 </div>
 
             </article>
         </div>
-        
-
-        <div>
-            <div class="date">
-                <span> 5 Feb</span>
-            </div>
-        </div>
-        <div>
-            <div class="meta-data">
-                <i class="icon icon-books"></i>
-                <span class="time">01:42</span>
-            </div>
-
-            <article class="post">
-                <h2 class="post-title">
-                    <a href="/calendar-bundle">Symfony2 Calendar Bundle</a>
-                </h2>
-
-                <div class="post-content">
-
-                    <p>Today I publish one of my symfony2 bundles.
-CalendarBundle is a Symfony2 bundle which helps you to show Datetimes based on a calendar. CalendarBundle uses a strategy that allows you to make your arbitary driver.</p>
-
-<p>Currently drivers are :</p>
-
-<ol>
-  <li>Gregorian</li>
-  <li>Persian (also known as Hejri Khorshidi, Hijri Shamsi (Persian: هجری شمسی, هجری خورشیدی). It is official calendar in Iran)</li>
-</ol>
-
-<p><a href="https://github.com/mohebifar/CalendarBundle">Read more and get installation instruction on Github.</a></p>
-
-
-
-                </div>
-
-            </article>
-        </div>
-        
-
-        <div>
-            <div class="date">
-                <span>25 Jan</span>
-            </div>
-        </div>
-        <div>
-            <div class="meta-data">
-                <i class="icon icon-books"></i>
-                <span class="time">21:31</span>
-            </div>
-
-            <article class="post">
-                <h2 class="post-title">
-                    <a href="/compression">gzip contents in web, Advantages and Disadvantages</a>
-                </h2>
-
-                <div class="post-content">
-
-                    <p>According to <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.3">RFC2616</a> a Http Request may contain an <code>accept-encoding</code> header field :</p>
-
-<blockquote>
-  <p>The Accept-Encoding request-header field is similar to Accept, but restricts the content-codings (section 3.5) that are acceptable in the response.</p>
-</blockquote>
-
-<p>For example : </p>
-
-<pre><code>Accept-Encoding: compress, gzip
-</code></pre>
-
-<p>Why does a browser send this information to the webserver ? Simply it says that the browser is able to decode gzip.
-But what are these all for ?</p>
-
-<p>If the webserver handles this capability it will be useful to compress some files, assets (Javascript, CSS) or even your major <code>text/html</code> response.</p>
-
-<p>Compressing contents has some advantages and disavantages, so we discuss about that to answer this question : <strong>When should we gzip our responses and when not ?</strong></p>
-
-<p><strong>Advantages</strong></p>
-
-<ol>
-  <li>
-    <p>Compressing contents helps with decreasing the time it will take for client to download.</p>
-  </li>
-  <li>
-    <p>It saves your bandwidth so it reduces costs ! (Don’t wonder if in your country it doesn’t matter ! In many countries such as mine, monthly bandwidths are too expensive and this is important to save it !)</p>
-  </li>
-</ol>
-
-<p><strong>Disadvantages</strong></p>
-
-<ol>
-  <li>Compressing contents eats your server’s CPU cycles !</li>
-</ol>
-
-<p>The conclusion is that there is no disadvantage for your user !</p>
-
-<h2 id="how-to-enable-it-in-apache">How to enable it in Apache</h2>
-<p>To compress contents using Apache make sure that <code>mod_deflate</code> is enabled.</p>
-
-<pre><code>LoadModule deflate_module modules/mod_deflate.so
-</code></pre>
-
-<p>Then add this in httpd.conf :</p>
-
-<pre><code>&lt;IfModule mod_deflate.c&gt;
-  AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript application/json
-&lt;/IfModule&gt;
-</code></pre>
-
-<p>But unfortunately it doesn’t cache the static datas and increases the load on your server.</p>
-
-
-                </div>
-
-            </article>
-        </div>
-        
-
-        <div>
-            <div class="date">
-                <span>16 Jan</span>
-            </div>
-        </div>
-        <div>
-            <div class="meta-data">
-                <i class="icon icon-books"></i>
-                <span class="time">01:42</span>
-            </div>
-
-            <article class="post">
-                <h2 class="post-title">
-                    <a href="/welcome">Welcome to my blog!</a>
-                </h2>
-
-                <div class="post-content">
-
-                    <p>Welcome to my blog ! This blog is about Web Technologies, Software Developing and Scientific softwares.</p>
-
-<p>Check out my <a href="https://github.com/mohebifar?tab=repositories">Repositories on github</a> for more info on what we’re going to discuss.</p>
-
-<p>I hope you’ll join me !</p>
-
-
-
-                </div>
-
-            </article>
-        </div>
-        
+        {% endfor %}
 
         <div>
             <ul class="pager">
-                
-                <li class="previous disabled"><span>&larr; Older</span></li>
-                
+                {% if paginator.previous_page %}
+                <li class="previous"><a href="{{ site.baseurl }}{% if paginator.previous_page != 1 %}/page{{ paginator.previous_page }}{% endif %}" class="btn">{% t older %}</a></li>
+                {% else %}
+                <li class="previous disabled"><span>{% t older %}</span></li>
+                {% endif %}
 
-                
-                <li class="next disabled"><span>Newer &rarr;</span></li>
-                
+                {% if paginator.next_page %}
+                <li class="next"><a href="{{ site.baseurl }}/page{{ paginator.next_page }}" class="btn">{% t newer %}</a></li>
+                {% else %}
+                <li class="next disabled"><span>{% t newer %}</span></li>
+                {% endif %}
             </ul>
         </div>
     </div>
 </div>
 
 
-<!--<p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>-->
-
-
-    <footer>
-    <div class="container text-center">
-        Powered by <a href="http://jekyllrb.com">Jekyll</a>. Designed by Mohamad Mohebifar
-    </div>
-</footer>
-
-  </body>
-
-</html>
+<!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
