@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>محمد محبی‌فر</title>
+    <meta name="description" content="Mohamad Mohebifar's Blog about Web Technologies & Scientific Softwares.
+">
+    
+
+    <link rel="stylesheet" href="/fa/assets/styles/main.css">
+    
+    <link rel="stylesheet" href="/fa/assets/styles/main.rtl.css">
+    
+
+    <link rel="canonical" href="http://www.mohebifar.ir/fa/">
+</head>
+
+
+  <body>
+
+    <header>
+    <nav class="navbar navbar-static-top navbar-default navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/fa">محمد محبی‌فر</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+
+                    
+                    
+                    <li>
+                        <a class="page-link" href="/fa/about/">درباره من</a>
+                    </li>
+                    
+                    
+                    
+                    
+                </ul>
+
+                <ul class="nav navbar-social navbar-nav navbar-left">
+                    <li>
+                        <a title="Follow me on Github" href="https://github.com/mohebifar">
+                            <i class="icon icon-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a title="Follow me on Facebook" href="https://www.facebook.com/rafibehom">
+                            <i class="icon icon-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a title="Follow me on Twitter" href="https://twitter.com/mohebifar">
+                            <i class="icon icon-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a title="Follow me on Stackoverflow" href="http://stackoverflow.com/users/1543737/mohebifar">
+                            <i class="icon icon-stackoverflow"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a title="Follow me on Codepen" href="http://codepen.io/mohebifar">
+                            <i class="icon icon-codepen"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+</header>
+
+<div class="languages">
+    <ul>
+        <li><a title="English" href="/">EN</a></li>
+        <li><a title="Deutsch" href="/de/">DE</a></li>
+        <li><a title="فارسی" class="active" href="/fa/">FA</a></li>
+    </ul>
+</div>
+
+
+
+    <div class="container">
+    <div class="posts">
+
+        
+        
+        
+        <div>
+            <div class="date">
+                <span>11 آبان</span>
+            </div>
+        </div>
+        <div>
+            <div class="meta-data">
+                <i class="icon icon-code"></i>
+                <span class="time">16:00</span>
+            </div>
+
+            <article class="post">
+                <h2 class="post-title">
+                    <a href="/fa/angular-persian">ماژول فارسی Angular.js</a>
+                </h2>
+
+                <div class="post-content">
+
+                    <p>انگولار یک فریم‌ورک MV* سمت کلاینت است که به زبان جاوا اسکریپت نوشته شده است. با استفاده از این ماژول می‌توانید یک وب‌اپلیکیشن Single Page بنویسید. برای توضیحات بیشتر به وب‌سایت <a href="https://angularjs.org">angularjs.org</a> مراجعه کنید.</p>
+
+<p>از آن‌جایی که در انگولار داده‌ها به صورت خام و معمولا به وسیله یک سرویس RESTful از سرور دریافت می‌شود، برای نمایش یک خروجی مناسب برای کاربران فارسی‌زبان ابزارهایی لازم هست.</p>
+
+<p>ماژول فارسی انگولار، یک مجموعه فیلتر کاربردی جهت محلی‌سازی نرم‌فزارهای فارسی، از جمله تبدیل اعداد انگلیسی به فارسی، تبدیل اعداد به حروف، تبدیل کاراکترهای عربی به فارسی، تغییر لی‌اوت کیبورد و … در اختیار کاربران قرار می‌دهد.</p>
+
+<p>برای نصب این ماژول ابتدا <code>bower</code> را نصب کنید سپس دستور زیر را اجرا کنید.</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>bower install angular-persian</code></pre></div>
+
+<p>سپس ماژول <code>ngPersian</code> را به app خود اضافه کنید.</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">angular</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s1">&#39;myApp&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;ngPersian&#39;</span><span class="p">,</span> <span class="cm">/* deps ... */</span><span class="p">]);</span></code></pre></div>
+
+<p>حالا می‌توانید از فیلترهای این ماژول در نماهای برنامه خود استفاده کنید.</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;input</span> <span class="na">ng-model=</span><span class="s">&quot;someNumber&quot;</span><span class="nt">&gt;</span> {‌{ someNumber | pNumber }‌}
+<span class="nt">&lt;input</span> <span class="na">ng-model=</span><span class="s">&quot;price&quot;</span><span class="nt">&gt;</span> {‌{ price | pDigitWords }‌} ریال</code></pre></div>
+
+<p>قطعه کد بالا مقدار مدل <code>someNumber</code> را با کاراکترهای فارسی نمایش می‌دهد و مقدار مدل <code>price</code> را با حروف نمایش می‌دهد. (برای مثال: یک صد و بیست هزار ریال)</p>
+
+<p><a href="https://github.com/mohebifar/angular-persian">برای خواندن جزئیات بشتر در مورد این ماژول، صفحه گیت‌هاب آن را دنبال کنید.</a></p>
+
+
+                </div>
+
+            </article>
+        </div>
+        
+        
+        <div>
+            <div class="date">
+                <span>1 آبان</span>
+            </div>
+        </div>
+        <div>
+            <div class="meta-data">
+                <i class="icon icon-code"></i>
+                <span class="time">18:31</span>
+            </div>
+
+            <article class="post">
+                <h2 class="post-title">
+                    <a href="/fa/php-jalali-extension">اکستنشن هجری شمسی برای php</a>
+                </h2>
+
+                <div class="post-content">
+
+                    <p>کتابخانه‌های پیکربندی تاریخ بر اساس تقویم هجری شمسی همواره یکی از پرکاربردترین ابزارها نزد برنامه‌نویسان ایرانی هستند.
+این کتابخانه‌ها در نرم‌افزارهای وب بسیار پراستفاده هستند و مخصوصا بسته‌های زیادی برای  برای این منظور به زبان php ایجاد شده.</p>
+
+<p>اما نکته‌ی اساسی محاسبات زیاد این کدهاست که بار پردازشی زیادی به همراه دارند مخصوصا اگر این کدها به زبان php هم نوشته شده باشند. قرار دادن این عملیات در یک لایه بالاتر از کدهای php به عنوان یک اکستنشن برای ZendEngine می‌تواند سرعت پردازش را افزایش دهد.</p>
+
+<p>اکستنشن <strong>php-jalali-extension</strong> به همین منظور ایجاد شده تا امکان نمایش تاریخ با قالب تقویم هجری شمسی با سرعت زیادی در زبان php انجام شود.</p>
+
+<p>یک مقایسه‌ی ساده با یک کتابخانه پراستفاده php سرعت بالای این اکستنشن را نشان می‌دهد. این اکستنشن می‌تواند ۱۰۰۰۰۰ تاریخ را در مدت ۵ ثانیه انجام دهد در حالی که این کار با یک کلاس php معمول، ۱۸ ثانیه زمان می‌برد.</p>
+
+<p><a href="https://github.com/mohebifar/php-jalali-extension">برای دریافت این اکستنشن، راهنمای آن را در گیت هاب بخوانید.</a></p>
+
+
+                </div>
+
+            </article>
+        </div>
+        
+        
+        <div>
+            <div class="date">
+                <span>26 بهمن</span>
+            </div>
+        </div>
+        <div>
+            <div class="meta-data">
+                <i class="icon icon-lab"></i>
+                <span class="time">23:58</span>
+            </div>
+
+            <article class="post">
+                <h2 class="post-title">
+                    <a href="/fa/parsing-smiles-with-razi">پردازش SMILES با رازی</a>
+                </h2>
+
+                <div class="post-content">
+
+                    <p>رازی یک کتابخانه برای جاوا است که برای توسعه نرم‌افزارهای شیمی کاربرد دارد.
+در حال حاضر رازی می‌تواند فایل‌های SMILES را پردازش کند و یک مدل شی‌گرا از مولکول را برگرداند.</p>
+
+<ol>
+  <li>کتابخانه را <a href="https://github.com/mohebifar/Razi/tree/master/dist" title="Download">دانلود</a> کنیدو آن را در پروژه وارد کنید.</li>
+  <li>یک وهله از <code>com.razi.formats.smiles.Reader</code> بسازید.</li>
+  <li>متد <code>set</code> را فرا بخوانید مقدار ورودی را به آن تزریق کنید.</li>
+  <li>متد <code>process</code> را صدا بزنید.</li>
+  <li>تمام شد !</li>
+</ol>
+
+<p>کد آن به این شکل خواهد بود :</p>
+
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="n">Reader</span> <span class="n">sr</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">Reader</span><span class="o">();</span>
+<span class="n">sr</span><span class="o">.</span><span class="na">set</span><span class="o">(</span><span class="s">&quot;C(=O)O&quot;</span><span class="o">);</span>
+<span class="n">sr</span><span class="o">.</span><span class="na">process</span><span class="o">();</span>
+
+<span class="n">Molecule</span> <span class="n">mol</span> <span class="o">=</span> <span class="n">sr</span><span class="o">.</span><span class="na">get</span><span class="o">();</span></code></pre></div>
+
+<p>حالا می‌توانید از توصیف‌کننده‌ها استفاده کنید. در حال حاضر رازی یک توصیف‌کننده‌ی شمارشی برای مولکول دارد. از کلاس <code>com.razi.descriptor.molecular.CountDescriptor</code> برای این کار استفاده کنید.</p>
+
+<div class="highlight"><pre><code class="language-java" data-lang="java"><span class="n">cd</span><span class="o">.</span><span class="na">countAtoms</span><span class="o">();</span> <span class="c1">// Number of all atoms</span>
+<span class="n">cd</span><span class="o">.</span><span class="na">countBonds</span><span class="o">();</span> <span class="c1">// Number of all bonds</span>
+<span class="n">cd</span><span class="o">.</span><span class="na">countBondsByOrder</span><span class="o">(</span><span class="mi">2</span><span class="o">);</span> <span class="c1">// Number of bonds with order 2</span>
+<span class="n">cd</span><span class="o">.</span><span class="na">countAtomsByElement</span><span class="o">(</span><span class="n">element</span><span class="o">);</span> <span class="c1">// Number of all atoms which are the same with given element</span></code></pre></div>
+
+<p>اگر به شیمی‌فناوری‌اطلاعات علاقه‌مند هستید، رازی را در <a href="https://github.com/mohebifar/Razi">گیت‌هاب</a> دنبال کنید.</p>
+
+
+
+                </div>
+
+            </article>
+        </div>
+        
+        
+        <div>
+            <div class="date">
+                <span>5 بهمن</span>
+            </div>
+        </div>
+        <div>
+            <div class="meta-data">
+                <i class="icon icon-books"></i>
+                <span class="time">21:31</span>
+            </div>
+
+            <article class="post">
+                <h2 class="post-title">
+                    <a href="/fa/compression">محتوای gzip در وب، مزایا و اشکال‌ها</a>
+                </h2>
+
+                <div class="post-content">
+
+                    <p>با توجه به <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.3">RFC2616</a> یک درخواست http می‌تواند شامل فیلد هدر <code>accept-encoding</code> باشد.</p>
+
+<p>برای مثال: </p>
+
+<pre><code>Accept-Encoding: compress, gzip
+</code></pre>
+
+<p>چرا یک مرورگر چنین اطلاعاتی به وب‌سرور ارسال می‌کند ؟  خیلی ساده ! مرورگر به وب‌سرور اطلاع می‌دهد که قادر به decode کردن gzip هست. (بحث ما در این مطلب صرفاٌ در مورد gzip است.)</p>
+
+<p>در این صورت می‌توان فایل‌های asset از قبیل JS و CSS و یا حتی HTML پاسخ را فشرده کرد. </p>
+
+<p>فشرده‌سازی محتوا مزیت‌ها و اشکال‌هایی هست. می‌خواهیم این سوال را بررسی کنیم که <strong>چه زمانی باید محتوا را gzip کنیم؟</strong></p>
+
+<p><strong>مزایا</strong></p>
+
+<ol>
+  <li>
+    <p>فشرده‌سازی زمان دریافت فایل توسط کاربران را کاهش می‌دهد.</p>
+  </li>
+  <li>
+    <p>مصرف پهنای باند و ترافیک شبکه را کاهش می‌دهد.</p>
+  </li>
+</ol>
+
+<p><strong>اشکال‌ها</strong></p>
+
+<ol>
+  <li>عملیات فشرده‌سازی، بار پردازشی را افزایش می‌دهد.</li>
+</ol>
+
+<p>در کل این کار هیچ ضرری برای کاربران ندارد !</p>
+
+<h2 id="section">نحوه فعال‌سازی در وب‌سرور آپاچی</h2>
+<p>ابتدا مطمئن شوید که ماژول <code>mod_deflate</code> فعال است.</p>
+
+<pre><code>LoadModule deflate_module modules/mod_deflate.so
+</code></pre>
+
+<p>سپس این قطه تنظیمات زیر را در فایل <code>httpd.conf</code> اضافه کنید.</p>
+
+<pre><code>&lt;IfModule mod_deflate.c&gt;
+  AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript application/json
+&lt;/IfModule&gt;
+</code></pre>
+
+<p>اما این ماژول gzip محتواهای فایل‌های ایستا را cache نمی‌کند و به ازای هر درخواست عملیات فشرده‌سازی مجددا انجام می‌شود.</p>
+
+
+                </div>
+
+            </article>
+        </div>
+        
+
+        <div>
+            <ul class="pager">
+                
+                <li class="previous disabled"><span>&rarr; قدیمی‌تر</span></li>
+                
+
+                
+                <li class="next disabled"><span>جدیدتر &larr;</span></li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!--<p class="rss-subscribe">subscribe <a href="/fa/feed.xml">via RSS</a></p>-->
+
+
+    <footer>
+    <div class="container text-center">
+        ساخته شده با <a href="http://jekyllrb.com">جکیل</a>. طراحی شده توسط محمد محبی‌فر
+    </div>
+</footer>
+
+
+<script src="/fa/assets/scripts/main.js"></script>
+
+
+  </body>
+
+</html>
