@@ -19,11 +19,10 @@
     <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="stylesheet" href="styles/main.css">
-    <script src="scripts/vendor/modernizr.js"></script>
 </head>
-<body>
+<body class="fixed-nav">
 <header>
-    <nav class="navbar navbar-static-top navbar-default navbar-default" role="navigation">
+    <nav class="navbar navbar-fixed-top navbar-default navbar-default" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -68,6 +67,15 @@
     </nav>
 
 </header>
+
+<div class="languages">
+    <ul>
+        <li><a title="English" href="#">EN</a></li>
+        <li><a title="Deutsch" href="#">DE</a></li>
+        <li><a title="فارسی" href="#">FA</a></li>
+    </ul>
+</div>
+
 <div class="container">
     <div class="posts">
         <div>
@@ -188,9 +196,16 @@
     ga('send', 'pageview');
 </script>
 
+<script src="scripts/vendor/modernizr.js"></script>
 
 <script src="scripts/main.js"></script>
 
-<script src="scripts/vendor/bootstrap.js"></script>
+<!--<script src="bower_components/bootstrap/js/alert.js"></script>-->
+<!--<script src="bower_components/bootstrap/js/modal.js"></script>-->
+<!--<script src="bower_components/bootstrap/js/popover.js"></script>-->
+<!--<script src="bower_components/bootstrap/js/carousel.js"></script>-->
+<!--<script src="bower_components/bootstrap/js/scrollspy.js"></script>-->
+<!--<script src="bower_components/bootstrap/js/tab.js"></script>-->
+
 </body>
 </html>
