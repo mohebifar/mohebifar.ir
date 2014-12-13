@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mohamad Mohebifar</title>
+    <description>Mohamad Mohebifar's Blog about Web Technologies &amp; Scientific Softwares.
+</description>
+    <link>http://www.mohebifar.ir/</link>
+    <atom:link href="http://www.mohebifar.ir/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Fri, 12 Dec 2014 13:37:48 +0330</pubDate>
+    <lastBuildDate>Fri, 12 Dec 2014 13:37:48 +0330</lastBuildDate>
+    <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Parsing SMILES using Razi</title>
+        <description>&lt;p&gt;Razi is a new scientific library for java.
+By now this library is ready to parse SMILES and make an object-oriented model of a molecule.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/mohebifar/Razi/tree/master/dist&quot; title=&quot;Download&quot;&gt;Download&lt;/a&gt; The library, and import it into your project.&lt;/li&gt;
+  &lt;li&gt;Make an instance of &lt;code&gt;com.razi.formats.smiles.Reader&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Call the &lt;code&gt;set&lt;/code&gt; method and set the input string.&lt;/li&gt;
+  &lt;li&gt;Call the &lt;code&gt;process&lt;/code&gt; method.&lt;/li&gt;
+  &lt;li&gt;Done !&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The code of above is :&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;Reader&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Reader&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;sr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;C(=O)O&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;sr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;process&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;Molecule&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mol&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now use descriptors to test it. By now &lt;code&gt;com.razi.descriptor.molecular.CountDescriptor&lt;/code&gt; is available to get some basic countable informations of a molecule.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;cd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;countAtoms&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Number of all atoms&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;cd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;countBonds&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Number of all bonds&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;cd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;countBondsByOrder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Number of bonds with order 2&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;cd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;countAtomsByElement&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Number of all atoms which are the same with given element&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;If you are interested in &lt;strong&gt;cheminformatic&lt;/strong&gt; and you like to be contributor you should see &lt;a href=&quot;https://github.com/mohebifar/Razi&quot;&gt;Razi on Github&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 15 Feb 2014 23:58:13 +0330</pubDate>
+        <link>http://www.mohebifar.ir/parsing-smiles-with-razi</link>
+        <guid isPermaLink="true">http://www.mohebifar.ir/parsing-smiles-with-razi</guid>
+        
+        <category>Razi</category>
+        
+        <category>SMILES</category>
+        
+        <category>SMILES Parser</category>
+        
+        <category>Chemistry Library</category>
+        
+        <category>Chemistry Java Library</category>
+        
+        
+        <category>_i18n</category>
+        
+        <category>en</category>
+        
+        <category>chemistry</category>
+        
+      </item>
+    
+      <item>
+        <title>Symfony2 Calendar Bundle</title>
+        <description>&lt;p&gt;Today I publish one of my symfony2 bundles.
+CalendarBundle is a Symfony2 bundle which helps you to show Datetimes based on a calendar. CalendarBundle uses a strategy that allows you to make your arbitary driver.&lt;/p&gt;
+
+&lt;p&gt;Currently drivers are :&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Gregorian&lt;/li&gt;
+  &lt;li&gt;Persian (also known as Hejri Khorshidi, Hijri Shamsi (Persian: هجری شمسی, هجری خورشیدی). It is official calendar in Iran)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/mohebifar/CalendarBundle&quot;&gt;Read more and get installation instruction on Github.&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 05 Feb 2014 01:42:13 +0330</pubDate>
+        <link>http://www.mohebifar.ir/calendar-bundle</link>
+        <guid isPermaLink="true">http://www.mohebifar.ir/calendar-bundle</guid>
+        
+        <category>Symfony2 bundle</category>
+        
+        <category>Calendar</category>
+        
+        <category>Persian calendar</category>
+        
+        <category>هجری شمسی</category>
+        
+        <category>هجری خورشیدی</category>
+        
+        <category>تقویم جلالی</category>
+        
+        <category>Hejri</category>
+        
+        <category>Hejri shamsi</category>
+        
+        
+        <category>_i18n</category>
+        
+        <category>en</category>
+        
+        <category>php</category>
+        
+        <category>symfony2</category>
+        
+        <category>bundle</category>
+        
+      </item>
+    
+      <item>
+        <title>gzip contents in web, Advantages and Disadvantages</title>
+        <description>&lt;p&gt;According to &lt;a href=&quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.3&quot;&gt;RFC2616&lt;/a&gt; a Http Request may contain an &lt;code&gt;accept-encoding&lt;/code&gt; header field :&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The Accept-Encoding request-header field is similar to Accept, but restricts the content-codings (section 3.5) that are acceptable in the response.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;For example : &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Accept-Encoding: compress, gzip
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Why does a browser send this information to the webserver ? Simply it says that the browser is able to decode gzip.
+But what are these all for ?&lt;/p&gt;
+
+&lt;p&gt;If the webserver handles this capability it will be useful to compress some files, assets (Javascript, CSS) or even your major &lt;code&gt;text/html&lt;/code&gt; response.&lt;/p&gt;
+
+&lt;p&gt;Compressing contents has some advantages and disavantages, so we discuss about that to answer this question : &lt;strong&gt;When should we gzip our responses and when not ?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Advantages&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Compressing contents helps with decreasing the time it will take for client to download.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;It saves your bandwidth so it reduces costs ! (Don’t wonder if in your country it doesn’t matter ! In many countries such as mine, monthly bandwidths are too expensive and this is important to save it !)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Disadvantages&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Compressing contents eats your server’s CPU cycles !&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The conclusion is that there is no disadvantage for your user !&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-enable-it-in-apache&quot;&gt;How to enable it in Apache&lt;/h2&gt;
+&lt;p&gt;To compress contents using Apache make sure that &lt;code&gt;mod_deflate&lt;/code&gt; is enabled.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;LoadModule deflate_module modules/mod_deflate.so
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then add this in httpd.conf :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;IfModule mod_deflate.c&amp;gt;
+  AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript application/json
+&amp;lt;/IfModule&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;But unfortunately it doesn’t cache the static datas and increases the load on your server.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 25 Jan 2014 21:31:13 +0330</pubDate>
+        <link>http://www.mohebifar.ir/compression</link>
+        <guid isPermaLink="true">http://www.mohebifar.ir/compression</guid>
+        
+        <category>GZIP</category>
+        
+        <category>HTTP Response GZIP</category>
+        
+        <category>Accept-encoding</category>
+        
+        <category>cache gzip</category>
+        
+        
+        <category>_i18n</category>
+        
+        <category>en</category>
+        
+        <category>http</category>
+        
+      </item>
+    
+      <item>
+        <title>Welcome to my blog!</title>
+        <description>&lt;p&gt;Welcome to my blog ! This blog is about Web Technologies, Software Developing and Scientific softwares.&lt;/p&gt;
+
+&lt;p&gt;Check out my &lt;a href=&quot;https://github.com/mohebifar?tab=repositories&quot;&gt;Repositories on github&lt;/a&gt; for more info on what we’re going to discuss.&lt;/p&gt;
+
+&lt;p&gt;I hope you’ll join me !&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 16 Jan 2014 01:42:13 +0330</pubDate>
+        <link>http://www.mohebifar.ir/welcome</link>
+        <guid isPermaLink="true">http://www.mohebifar.ir/welcome</guid>
+        
+        
+        <category>_i18n</category>
+        
+        <category>en</category>
+        
+        <category>news</category>
+        
+      </item>
+    
+  </channel>
+</rss>
