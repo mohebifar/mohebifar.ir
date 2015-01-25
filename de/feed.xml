@@ -4,10 +4,10 @@
     <title>Mohamad Mohebifar</title>
     <description>Mohamad Mohebifar's Blog about Web Technologies &amp; Scientific Softwares.
 </description>
-    <link>http://www.mohebifar.ir/de/</link>
-    <atom:link href="http://www.mohebifar.ir/de/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 12 Dec 2014 13:37:49 +0330</pubDate>
-    <lastBuildDate>Fri, 12 Dec 2014 13:37:49 +0330</lastBuildDate>
+    <link>https://mohebifar.com/de/</link>
+    <atom:link href="https://mohebifar.com/de/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sun, 25 Jan 2015 15:56:25 +0330</pubDate>
+    <lastBuildDate>Sun, 25 Jan 2015 15:56:25 +0330</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -27,8 +27,8 @@ Mittlerweile diese Bibliothek kannt SMILES analysieren und eine objektorientiert
 &lt;span class=&quot;n&quot;&gt;cd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;countAtomsByElement&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Number of all atoms which are the same with given element&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 </description>
         <pubDate>Mon, 24 Nov 2014 03:05:13 +0330</pubDate>
-        <link>http://www.mohebifar.ir/de/analysieren-smiles-razi</link>
-        <guid isPermaLink="true">http://www.mohebifar.ir/de/analysieren-smiles-razi</guid>
+        <link>https://mohebifar.com/de/analysieren-smiles-razi</link>
+        <guid isPermaLink="true">https://mohebifar.com/de/analysieren-smiles-razi</guid>
         
         
         <category>_i18n</category>
@@ -47,8 +47,8 @@ Mittlerweile diese Bibliothek kannt SMILES analysieren und eine objektorientiert
 
 </description>
         <pubDate>Mon, 24 Nov 2014 02:56:13 +0330</pubDate>
-        <link>http://www.mohebifar.ir/de/welcome</link>
-        <guid isPermaLink="true">http://www.mohebifar.ir/de/welcome</guid>
+        <link>https://mohebifar.com/de/welcome</link>
+        <guid isPermaLink="true">https://mohebifar.com/de/welcome</guid>
         
         
         <category>_i18n</category>

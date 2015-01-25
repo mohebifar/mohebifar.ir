@@ -4,10 +4,10 @@
     <title>Mohamad Mohebifar</title>
     <description>Mohamad Mohebifar's Blog about Web Technologies &amp; Scientific Softwares.
 </description>
-    <link>http://www.mohebifar.ir/fa/</link>
-    <atom:link href="http://www.mohebifar.ir/fa/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 12 Dec 2014 13:37:49 +0330</pubDate>
-    <lastBuildDate>Fri, 12 Dec 2014 13:37:49 +0330</lastBuildDate>
+    <link>https://mohebifar.com/fa/</link>
+    <atom:link href="https://mohebifar.com/fa/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sun, 25 Jan 2015 15:56:25 +0330</pubDate>
+    <lastBuildDate>Sun, 25 Jan 2015 15:56:25 +0330</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -36,8 +36,8 @@
 &lt;p&gt;&lt;a href=&quot;https://github.com/mohebifar/angular-persian&quot;&gt;برای خواندن جزئیات بشتر در مورد این ماژول، صفحه گیت‌هاب آن را دنبال کنید.&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 02 Nov 2014 16:00:15 +0330</pubDate>
-        <link>http://www.mohebifar.ir/fa/angular-persian</link>
-        <guid isPermaLink="true">http://www.mohebifar.ir/fa/angular-persian</guid>
+        <link>https://mohebifar.com/fa/angular-persian</link>
+        <guid isPermaLink="true">https://mohebifar.com/fa/angular-persian</guid>
         
         <category>Angular</category>
         
@@ -66,8 +66,8 @@
 &lt;p&gt;&lt;a href=&quot;https://github.com/mohebifar/php-jalali-extension&quot;&gt;برای دریافت این اکستنشن، راهنمای آن را در گیت هاب بخوانید.&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 23 Oct 2014 18:31:13 +0330</pubDate>
-        <link>http://www.mohebifar.ir/fa/php-jalali-extension</link>
-        <guid isPermaLink="true">http://www.mohebifar.ir/fa/php-jalali-extension</guid>
+        <link>https://mohebifar.com/fa/php-jalali-extension</link>
+        <guid isPermaLink="true">https://mohebifar.com/fa/php-jalali-extension</guid>
         
         <category>PHP</category>
         
@@ -118,8 +118,8 @@
 
 </description>
         <pubDate>Sat, 15 Feb 2014 23:58:13 +0330</pubDate>
-        <link>http://www.mohebifar.ir/fa/parsing-smiles-with-razi</link>
-        <guid isPermaLink="true">http://www.mohebifar.ir/fa/parsing-smiles-with-razi</guid>
+        <link>https://mohebifar.com/fa/parsing-smiles-with-razi</link>
+        <guid isPermaLink="true">https://mohebifar.com/fa/parsing-smiles-with-razi</guid>
         
         <category>Razi</category>
         
@@ -190,8 +190,8 @@
 &lt;p&gt;اما این ماژول gzip محتواهای فایل‌های ایستا را cache نمی‌کند و به ازای هر درخواست عملیات فشرده‌سازی مجددا انجام می‌شود.&lt;/p&gt;
 </description>
         <pubDate>Sat, 25 Jan 2014 21:31:13 +0330</pubDate>
-        <link>http://www.mohebifar.ir/fa/compression</link>
-        <guid isPermaLink="true">http://www.mohebifar.ir/fa/compression</guid>
+        <link>https://mohebifar.com/fa/compression</link>
+        <guid isPermaLink="true">https://mohebifar.com/fa/compression</guid>
         
         <category>GZIP</category>
         

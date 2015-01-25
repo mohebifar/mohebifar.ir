@@ -4,10 +4,10 @@
     <title>Mohamad Mohebifar</title>
     <description>Mohamad Mohebifar's Blog about Web Technologies &amp; Scientific Softwares.
 </description>
-    <link>http://www.mohebifar.ir/</link>
-    <atom:link href="http://www.mohebifar.ir/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 12 Dec 2014 13:37:48 +0330</pubDate>
-    <lastBuildDate>Fri, 12 Dec 2014 13:37:48 +0330</lastBuildDate>
+    <link>https://mohebifar.com/</link>
+    <atom:link href="https://mohebifar.com/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sun, 25 Jan 2015 15:56:23 +0330</pubDate>
+    <lastBuildDate>Sun, 25 Jan 2015 15:56:23 +0330</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -42,8 +42,8 @@ By now this library is ready to parse SMILES and make an object-oriented model o
 
 </description>
         <pubDate>Sat, 15 Feb 2014 23:58:13 +0330</pubDate>
-        <link>http://www.mohebifar.ir/parsing-smiles-with-razi</link>
-        <guid isPermaLink="true">http://www.mohebifar.ir/parsing-smiles-with-razi</guid>
+        <link>https://mohebifar.com/parsing-smiles-with-razi</link>
+        <guid isPermaLink="true">https://mohebifar.com/parsing-smiles-with-razi</guid>
         
         <category>Razi</category>
         
@@ -80,8 +80,8 @@ CalendarBundle is a Symfony2 bundle which helps you to show Datetimes based on a
 
 </description>
         <pubDate>Wed, 05 Feb 2014 01:42:13 +0330</pubDate>
-        <link>http://www.mohebifar.ir/calendar-bundle</link>
-        <guid isPermaLink="true">http://www.mohebifar.ir/calendar-bundle</guid>
+        <link>https://mohebifar.com/calendar-bundle</link>
+        <guid isPermaLink="true">https://mohebifar.com/calendar-bundle</guid>
         
         <category>Symfony2 bundle</category>
         
@@ -167,8 +167,8 @@ But what are these all for ?&lt;/p&gt;
 &lt;p&gt;But unfortunately it doesn’t cache the static datas and increases the load on your server.&lt;/p&gt;
 </description>
         <pubDate>Sat, 25 Jan 2014 21:31:13 +0330</pubDate>
-        <link>http://www.mohebifar.ir/compression</link>
-        <guid isPermaLink="true">http://www.mohebifar.ir/compression</guid>
+        <link>https://mohebifar.com/compression</link>
+        <guid isPermaLink="true">https://mohebifar.com/compression</guid>
         
         <category>GZIP</category>
         
@@ -197,8 +197,8 @@ But what are these all for ?&lt;/p&gt;
 
 </description>
         <pubDate>Thu, 16 Jan 2014 01:42:13 +0330</pubDate>
-        <link>http://www.mohebifar.ir/welcome</link>
-        <guid isPermaLink="true">http://www.mohebifar.ir/welcome</guid>
+        <link>https://mohebifar.com/welcome</link>
+        <guid isPermaLink="true">https://mohebifar.com/welcome</guid>
         
         
         <category>_i18n</category>
