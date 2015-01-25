@@ -8,7 +8,7 @@ dir:
   en: ltr
   de: ltr
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://www.mohebifar.ir" # the base hostname & protocol for your site
+url: "https://mohebifar.com" # the base hostname & protocol for your site
 twitter_username: mohebifar
 github_username:  mohebifar
 facebook_username:  rafibehom
