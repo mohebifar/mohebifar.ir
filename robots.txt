@@ -1,0 +1,4 @@
+User-agent: *
+Sitemap: http://mohebifar.com/feed.xml
+Sitemap: http://mohebifar.com/fa/feed.xml
+Sitemap: http://mohebifar.com/de/feed.xml
